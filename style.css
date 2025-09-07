@@ -46,6 +46,45 @@ nav a:hover {
   padding: 2rem;
 }
 
+/* About Section Styles */
+.about {
+  margin: 40px 0;
+  padding: 20px 0;
+}
+
+.about-container {
+  display: flex; /* Creates two columns */
+  gap: 40px;     /* Adds space between columns */
+  align-items: center;
+  justify-content: center;
+}
+
+.about-left {
+  flex: 1;
+  padding: 10px;
+}
+
+.about-right {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive: Stack columns on small screens */
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 .hero img {
   object-fit: cover;
   height: 100px;
@@ -53,6 +92,7 @@ nav a:hover {
 }
 
 .hero h1 {
+  color:#99E1D9;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
